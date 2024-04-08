@@ -6,8 +6,9 @@
 </p>
 
 ## HOW TO BUILD REDROSE ?
-READ PLEASE :
-
+1. Create key https://redroseproject.xyz/createkey
+2. a.js const key place
+3. then open install bat
 
 ## 📝 Key System
 
